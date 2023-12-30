@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    padding: 20px;
+    background-color:bisque;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+.logo img{
+    max-width: 15%;
+}
+.navbar ul{
+    display: flex;
+
+}
+.navbar li{
+    list-style: none;
+    margin-right: 20px;
+
+}
+.navbar li:last-child{
+    margin-right: 0;
+}
+.navbar a{
+    text-decoration: none;
+    
+    font-size: 1.6rem;
+    color: black;
+    transition: all ease 0.3s;
+
+}
+.navbar a:hover{
+    color:palevioletred;
+
+}
+.hero{
+    /* position: relative; */
+    height: 800px;
+    overflow: hidden;
+}
+.hero-image img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    z-index:  -1; 
+    
+}
+.hero-content{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    text-align: center;
+    color:white
+
+}
+.hero-content h1{
+    
+    font-size: 4rem;
+
+}
+.hero-content p{
+    font-size: 1.8rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.hero-button{
+    text-decoration: none;
+    color: aliceblue;
+    background-color: brown;
+    padding: 12px 30px;
+    border-radius: 50px;
+    transition: all ease 0.3s;
+}
+.hero-button:hover{
+    background-color: grey;
+
+}
+.destination{
+    font-size: 1.2rem;
+    /* margin-bottom: 40px;
+    margin-left: 80px;
+    margin-right: 80px; */
+    margin: 40px 80px;
+    text-align: center;
+
+
+
+}
+.destination h2{
+    margin-bottom:40px ;
+}
+.destination-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+.destination-item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+
+}
+.destination-item {
+    text-align: left;
+}
+.destination-item h3{
+    font-size: 2rem;
+}
+.destination-item p{
+    font-size: 1.2rem;
+}
+.about{
+    text-align: center;
+    padding: 80px;
+    background-color:;
+}
+.about h3{
+    size: 3.2rem;
+}
+.about p{
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+.contact{
+    padding: 80px;
+    text-align: center;
+    color: black;
+    list-style: none;
+}
+.contact ul{
+    list-style: none;
+    
+}
+footer{
+    background-color: gray;
+    columns: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.social-icon a{
+    color: aliceblue;
+    font-size: 24px;
+    margin-right: 20px;
+
+}
